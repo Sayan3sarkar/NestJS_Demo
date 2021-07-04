@@ -69,6 +69,35 @@ We create a custom decorator so that we can directly have the `req.user` param i
 
 <hr>
 
+## Heroku Config
+
+- Postgres database addon to Heroku:
+
+```
+heroku addons:create heroku-postgresql:hobby-dev -a task-management-sayansarkar
+```
+
+- Set project remote to heroku app
+
+```
+heroku git:remote -a task-management-sayansarkar
+```
+
+- To prevent typescript errors in Heroku Environment
+
+```
+heroku config:set NPM_CONFIG_PRODUCTION=false
+```
+
+- Setting **NODE_ENV** and **STAGE** environment variables using Heroku CLI.
+
+```
+heroku config:set NODE_ENV=production
+heroku config:set STAGE=prod
+```
+
+<hr>
+
 ## Test
 
 ```bash
