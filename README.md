@@ -96,6 +96,10 @@ heroku config:set NODE_ENV=production
 heroku config:set STAGE=prod
 ```
 
+## API Deployment
+
+The API is deployed at https://task-management-sayansarkar.herokuapp.com/
+
 <hr>
 
 ## Test
